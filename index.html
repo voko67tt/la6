@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Краснянський Володимир IA-21">
+		<title>Home</title>
+		<link rel="stylesheet" href="css/style.css">
+	
+</head>
+<body>
+    <h1 class="HN">Main</h1>
+    <p align="center">
+        <u>Ласкаво просимо на наш сайт</u>, <i>присвячений захоплюючому світу мистецтва!</i><br>
+        Тут ви знайдете всю необхідну інформацію про популярні художні стилі та рецензії на найвидатніші художні твори.<br>
+        <span id="purpose" style="color: purple">
+            Сайт створено для всіх любителів мистецтва, незалежно від вашого досвіду та вподобань.
+        </span>
+        Занурюйтесь в захоплюючий світ художніх шедеврів разом з нами!
+    </p>
+    <hr>
+    <h2 class="HN">Навігація</h2>
+    <a href="index.html#purpose">Митці і їхні твори</a> <br>
+    <a href="artists.html">Відомі художники</a> <a href="moba.html#moba"> (розшифровка)</a><br>
+    <a href="move.html">Мистецькі течії</a> <br>
+    <a href="galleries.html">Галереї</a> <br>
+    <hr style="border-top: 1px dashed #000;">
+    <a href="http://surl.li/qrklh">
+        <img src="клодмоне.jpg" alt="art" height="100px" width="100px">
+    </a>
+    <img src="клодмоне.jpg" alt="art" height="400px" width="400px">
+
+    <div class="artContainer float-left">
+        <div class="art-title">Вінсент ван Гог</div>
+        <div class="art-description">Постімпресіоніст, відомий своїми виразними пензлями</div>
+        <a href="https://uk.wikipedia.org/wiki/Вінсент_ван_Гог">Детальніше</a>
+    </div>
+
+    <div class="artContainer float-right">
+        <div class="art-title first-child">Клод Моне</div>
+        <div class="art-description">Засновник імпресіонізму, відомий своїми картинами лілій</div>
+        <a href="https://uk.wikipedia.org/wiki/Клод_Моне">Детальніше</a>
+    </div>
+
+    <div class="artContainer">
+        <div class="art-title">Сальвадор Далі</div>
+        <div class="art-description">Сюрреаліст, відомий своїми химерними та дивовижними картинами</div>
+        <a href="https://uk.wikipedia.org/wiki/Сальвадор_Далі">Детальніше</a>
+    </div>
+		</div>
+
+		<button onclick="userDialog()">Почати діалог</button>
+		<button onclick="redirectEpic()">Перенаправити на сторінку</button>
+		<button onclick="changeHTML()">Передбачення</button>
+
+		<div id="prediction">
+			<p>Тут будуть твої вподобання</p>
+		</div>
+		<hr>
+		<div id="newTrends">
+			<h1>Популярні митці</h1>
+			<ul id="gamesList">
+				<li>Клод Моне</li>
+				<li>Едгар Дега</li>
+				<li>П'єр-Огюст Ренуар</li>
+			</ul>
+		</div>
+
+		<button onclick="newRealise()">Нова тема</button>
+		<button onclick="newGame()">Новий митець</button>
+		<button onclick="deleteGame()">Видалити</button>
+		<button onclick="changeGame()">Змінити автора</button>
+		<button onclick="addLink()">Додати посилання</button>
+
+		<script src="js/main.js"></script>
+
+	<script>
+		game = prompt("Який ваш улюблений митець?")
+        alert(game)
+		confirm("Дякую!")
+        showDeveloperInfo("Краснянський", "Володимир");
+        compare()
+		changeBackground("cyan")
+	</script>
+	</body>
+</html>
